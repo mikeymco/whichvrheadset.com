@@ -18,6 +18,7 @@
     }
   ],
   "scripts": {
+    "deploy": "git push origin master && ssh whichvrh@whichvrheadset.com \"cd public_html && git pull\"",
     "build": "bower install && gulp",
     "jshint": "gulp jshint",
     "jscs": "jscs gulpfile.js assets/scripts/*.js"
